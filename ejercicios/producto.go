@@ -2,10 +2,11 @@ package ejercicios
 
 // Escriba un método recursivo que tome un entero n
 // devuelva su factorial
-func Factorial(n int) int {
-	if n < 2 {
-		return 1
+func Producto(n int, m int) int {
+	if n == 0 || m == 0 {
+		return 0
 	}
 
-	return n * Factorial(n-1)
+	return n + Producto(n, m-1)
+
 }
