@@ -16,6 +16,13 @@ func TestEjercicio02(t *testing.T) {
 	assert.Equal(t, 2, Factorial(2))
 	assert.Equal(t, 24, Factorial(4))
 	assert.Equal(t, 120, Factorial(5))
+	assert.Equal(t, 1, Factorial(0))
+}
+func TestEjercicioProducto(t *testing.T) {
+	assert.Equal(t, 10, Producto(2, 5))
+}
+func TestEjercicioDivision(t *testing.T) {
+	assert.Equal(t, 8, Division(25, 3))
 }
 
 func TestEjercicio03(t *testing.T) {
